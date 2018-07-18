@@ -1,7 +1,14 @@
+body {
+    overflow-x: hidden;
+    
+}
+
+
+
+
 #home {
     height: 100vh;
     width: 100%;
-    overflow-x: hidden;
     background: #D3D3D3;
     background: url("../img/home-background.jpg");
     -webkit-background-size: cover;
@@ -9,6 +16,7 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 .home-overlay {
     position: absolute;
@@ -100,7 +108,7 @@
     }
 }
 
-/*     DESCTOP   */
+/*     DESKTOP   */
 
 @media(min-width: 576px) {
     #studies {
@@ -126,6 +134,7 @@
 
     .second {
         margin-top: -100px;
+        position: relative;
     }
 
     .row-hl {
@@ -133,10 +142,36 @@
         width: 200px;
 
     }
+    
+    .item {
+        position: relative;
+    }
+    
+    .js,
+    .html{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        transition: all .5s ease;
+    }
+    
+    .html{
+        right: 0;
+        top: 0;
+    }
 
     .animated {
-        transition: all 1s ease;
+        transition: all .5s ease;
     }
+    
+    .item:hover .js {
+        transform: translateX(-100%) rotate(-45deg);
+    }
+    .item:hover .html{
+        transform: translateX(100%) rotate(45deg);
+    }
+    
+    
 
     .animated:hover {
         transform: scale(1.2);

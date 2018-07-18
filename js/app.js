@@ -1,15 +1,9 @@
 
+// Work Section div animations 
 
-// const menuOverlay = document.querySelector('.text-center');
-// const animatedDiv = document.querySelector('.menu-overlay');
+const jsIcon = document.querySelector('.js');
+const hmtlIcon = document.querySelector('.html');
 
-// console.log(menuOverlay);
-
-// menuOverlay.addEventListener('click', function(){
-//     alert('hi ther');
-// });
-
-// function animateDiv () {
-//     alert('hi there');
-// }
-
+    // Event lisntner 
+    
+document.querySelector('.itme').addEventListener('mouseover', animate);
