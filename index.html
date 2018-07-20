@@ -41,7 +41,7 @@
     <div class="row align-items-center center-div no-gutters">
       <div class="col col-md-6 offset-md-3 w-100 text-center">
         <div class=" image-border mx-auto row align-items-center">
-          <!--<img class=" center-pic rounded" src="img/homepage-img-2.jpg"></img>-->
+          <img class=" center-pic rounded" src="img/landing-page-photo.png"></img>
         </div>
         <h1>Igor Pavlneko</h1>
         <hr class="m-auto" style="width: 50%;">
@@ -51,7 +51,6 @@
     <div class="col col-md-6 offset-md-3 w-100 text-center">
       <i class="fa fa-angle-down fa-5x "></i>
     </div>
-  </div>
   </div>
   <!-- /home div -->
 
@@ -86,8 +85,10 @@
           </div>
 
 
-          <div class="item">
+          <div class="item" data-toggle="modal" data-target="#loginModal">
             <img class="js" src="img/icons/javascript.png"></img>
+            <img class="html" src="img/icons/html5.png"></img>
+            <img class="html" src="img/icons/html5.png"></img>
             <img class="html" src="img/icons/html5.png"></img>
             <div class="d-flex second animated border row-hl align-items-end">
               <h3>Web<br> <span class="ml-3">Stack</span> </h3>
@@ -99,6 +100,39 @@
     </div>
 
   </div>
+
+
+
+  <!-- MODAL 
+        div has to have a class of modal and id that we created for it in the button
+    -->
+  <div class="modal w-100" id="loginModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Log-In</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username">UserName</label>
+              <input type="text" placeholder="UsernName" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" placeholder="password" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary" data-dismiss="modal">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- /work secion  -->
 
 
