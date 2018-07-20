@@ -1,10 +1,25 @@
-body {
-    overflow-x: hidden;
-
+@font-face {
+    font-family: h1font, Arial, Helvetica, sans-serif;
+    src: url(fonts/Areno-Rough.ttf);
 }
 
+h1 {
+    /* font-family: h1font; */
+    color: #fff;
+}
 
+h3 {
+    color: #425B88;
+}
 
+h2,
+p {
+    color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 #home {
     height: 100vh;
@@ -17,18 +32,15 @@ body {
     background-size: cover;
 }
 
-
 .home-overlay {
     position: absolute;
     height: 100vh;
     width: 100%;
-    /*z-index: 1;*/
-    background: rgba(137, 174, 230, 0.6);
+    background: rgba(20, 21, 46, 0.72);
 }
 
 .logo {
-    height: 100%;
-    width: 100%;
+    width: 150px;
 }
 
 .fa {
@@ -48,13 +60,15 @@ body {
     overflow: hidden;
 }
 
-.w-100 {
-    /*background: pink;*/
+.center-pic {
+    width: 100%;
+    height: 100%;
 }
 
-.center-pic {
-    height: 100%;
-    width: 100%;
+.line {
+    background: #fff;
+    height: 1px;
+    width: 80%;
 }
 
 #sections {
@@ -69,6 +83,12 @@ body {
 
 .menu {
     position: relative;
+    /* background: #425B88; */
+    color: #fff;
+}
+
+.port-item {
+    width: 25%;
 }
 
 .menu-overlay {
@@ -79,10 +99,149 @@ body {
     transform: translateX(-90%);
 }
 
-#studies {
-    /*height: 70vh;*/
-    background: pink;
+.skills {
+    background: #F1F0F5;
+    color: #425B88;
 }
+
+.studies {
+    background: #BFB8DB;
+    color: #425B88;
+}
+
+.projects {
+    background: #5F587C;
+}
+
+.contact {
+    background: #352E4F;
+}
+
+#studies {
+    height: 90vh;
+    background: F0EFF5;
+}
+
+#studies {
+    background: linear-gradient(-155deg, rgba(217, 215, 228, 0.55) 0%, rgba(252, 252, 255, 0.55) 98%);
+    /* width: 25%; */
+    cursor: pointer;
+}
+
+.brdr-bttm {
+    border-bottom: 3px  #352E4F solid !important;
+}
+
+.animated {
+    background: #fff;
+}
+
+.item {
+    position: relative;
+}
+.js,
+.html {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: all .3s;
+    z-index: -1;
+}
+.html {
+    right: 0;
+    top: 0;
+}
+
+
+
+/* Work history section  */
+
+.learn-story-div {
+    height: 90vh;
+}
+
+
+
+.brdr {
+    position: relative;
+    width: 100px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background: #352E4F;
+    margin: auto;
+}
+
+.dot {
+    width: 40%;
+    height: 40%;
+    background: #fff;
+    margin: auto;
+    margin-top: 30%;
+    border-radius: 100%;
+    
+}
+
+
+/* .studis {
+    position: absolute;
+    top: 30%;
+    right: -140%;
+    width: 100%;
+} */
+
+.brdr::before {
+    content: '';
+    width: 2px;
+    height: 110px;
+    position: absolute;
+    background: #352E4F;
+    display: inline-block;
+    /* left: 45%; */
+    top: 100%;
+}
+
+.last::before{
+    content: '';
+    height: 0;
+    width: 0;
+}
+
+
+.brdr-1::after {
+    content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, tenetur!';
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    display: block;
+     /* background: blue;  */
+    left: 110%;    
+    top: 0;
+}
+
+.brdr-2::after {
+    content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, tenetur!';
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    display: block;
+     /* background: blue;  */
+    right:  110%;    
+    top: 0;
+}
+
+.journey-img {
+    background: url(../img/jorney-div.png);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -99,80 +258,69 @@ body {
         border-radius: 50%;
         overflow: hidden;
     }
-
     .row-hl {
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
         margin: auto;
         margin-top: 50px;
+    }
+
+    .logo {
+        width: 40%;
     }
 }
 
 /*     DESKTOP   */
 
 @media(min-width: 576px) {
-    #studies {
-        background: pink;
-    }
-
     .skills-div {
         height: 90vh;
     }
-
     .skills-parent {
         height: 70vh;
     }
-
     .skills-item {
         width: 20;
         height: 40%;
     }
-
-
     .second {
         margin-top: -100px;
         position: relative;
     }
-    
     .fa-angle-double-right {
         cursor: pointer;
     }
-
     .row-hl {
         height: 200px;
         width: 200px;
-
     }
-
     .item {
         position: relative;
     }
-    
-
     .js,
     .html {
         position: absolute;
         height: 100px;
         width: 100px;
-        transition: all .3s ;
+        transition: all .3s;
+        z-index: -1;
     }
-
     .html {
         right: 0;
         top: 0;
     }
-
     .animated {
         transition: all .2s ease-in;
     }
 
-    
-
-
+    .animated:hover > h3 {
+        color: #fff;
+    }
 
     .animated:hover {
         /*transform: scale(1.2);*/
-        background: black;
+        /* Rectangle 2 Copy: */
+        background: linear-gradient(-197deg, rgba(119,148,189,0.82) 0%, #425B88 98%);
         color: #fff;
         animation: .5s linear .1s animationFrames;
         -webkit-box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
@@ -195,7 +343,6 @@ body {
         /*-ms-animation-iteration-count: 1;*/
         /*-ms-transform-origin: 50% 50%;*/
     }
-
     /*.first-item  {*/
     /*    animation: animationFrames linear 1s;*/
     /*    animation-iteration-count: 1;*/
@@ -248,7 +395,6 @@ body {
             transform: rotate(0deg);
         }
     }
-
     @-moz-keyframes animationFrames {
         0% {
             transform: rotate(0deg);
@@ -284,7 +430,6 @@ body {
             transform: rotate(0deg);
         }
     }
-
     @-webkit-keyframes animationFrames {
         0% {
             transform: rotate(0deg);
@@ -320,7 +465,6 @@ body {
             transform: rotate(0deg);
         }
     }
-
     @-o-keyframes animationFrames {
         00% {
             transform: rotate(0deg);
@@ -356,7 +500,6 @@ body {
             transform: rotate(0deg);
         }
     }
-
     @-ms-keyframes animationFrames {
         0% {
             transform: rotate(0deg);
@@ -392,5 +535,4 @@ body {
             transform: rotate(0deg);
         }
     }
-
 }

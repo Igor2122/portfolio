@@ -11,19 +11,22 @@ document.querySelector('.item').addEventListener('mouseenter', animate_item);
 document.querySelector('.item').addEventListener('mouseout', unAnimate);
 // document.getElementById('sections').addEventListener('mouseover', unAnimate);
 
-console.log(itemDiv.style.width);
 
-function translateElemtns() {
-        jsIcon.setAttribute('style', 'transform: translateX(-100%) rotate(-45deg);');
-        hmtlIcon.setAttribute('style', 'transform: translateX(100%) rotate(45deg);');
-        itemDiv.style.transform = "rotate(7deg)";
-        itemDiv.style.transform = "scale(1.2)";
+
+// function translateElemtns() {
+//         jsIcon.setAttribute('style', 'transform: translateX(-100%) rotate(-45deg);');
+//         hmtlIcon.setAttribute('style', 'transform: translateX(100%) rotate(45deg);');
+//         itemDiv.style.transform = "rotate(7deg)";
+//         itemDiv.style.transform = "scale(1.2)";
 
 
 function animate_item() {
-    setTimeout(translateElemtns
-    , 500);
-
+    // setTimeout(translateElemtns
+    // , 500);
+    jsIcon.setAttribute('style', 'transform: translateX(-100%) rotate(-45deg);');
+    hmtlIcon.setAttribute('style', 'transform: translateX(100%) rotate(45deg);');
+    itemDiv.style.transform = "rotate(7deg)";
+    itemDiv.style.transform = "scale(1.2)";
 };
 
 function unAnimate() {
