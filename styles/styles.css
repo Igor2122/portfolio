@@ -125,7 +125,7 @@ body {
 
 .work-seciton {
     position: relative;
-    background: pink;
+    /* background: pink; */
 }
 
 .skills-divs {
@@ -133,17 +133,6 @@ body {
     /* height: 100%; */
 }
 
-.rectange { 
-    position: absolute;
-    z-index: 0;
-    /* Path 6: */
-    /* background-image: linear-gradient(-116deg, rgba(78, 115, 167, 0.01) 27%, #425B88 94%); */
-    background: pink;
-    clip-path: polygon(100% 0, 0 0, 100% 45%);
-    height: 60%;
-    width: 100%;
-
-}
 
 
 
