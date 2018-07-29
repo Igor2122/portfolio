@@ -43,7 +43,8 @@ body {
     width: 150px;
 }
 
-.fa {
+.fab,
+.fas {
     color: #fff;
     /*border: 1px #fff solid;*/
 }
@@ -122,6 +123,30 @@ body {
     background: F0EFF5;
 }
 
+.work-seciton {
+    position: relative;
+    background: pink;
+}
+
+.skills-divs {
+    background: red;
+    /* height: 100%; */
+}
+
+.rectange { 
+    position: absolute;
+    z-index: 0;
+    /* Path 6: */
+    /* background-image: linear-gradient(-116deg, rgba(78, 115, 167, 0.01) 27%, #425B88 94%); */
+    background: pink;
+    clip-path: polygon(100% 0, 0 0, 100% 45%);
+    height: 60%;
+    width: 100%;
+
+}
+
+
+
 #studies {
     background: linear-gradient(-155deg, rgba(217, 215, 228, 0.55) 0%, rgba(252, 252, 255, 0.55) 98%);
     /* width: 25%; */
@@ -129,7 +154,7 @@ body {
 }
 
 .brdr-bttm {
-    border-bottom: 3px  #352E4F solid !important;
+    border-bottom: 3px #352E4F solid !important;
 }
 
 .animated {
@@ -139,6 +164,7 @@ body {
 .item {
     position: relative;
 }
+
 .js,
 .html {
     position: absolute;
@@ -147,12 +173,11 @@ body {
     transition: all .3s;
     z-index: -1;
 }
+
 .html {
     right: 0;
     top: 0;
 }
-
-
 
 /* Work history section  */
 
@@ -160,36 +185,16 @@ body {
     height: 90vh;
 }
 
-
-
 .brdr {
     position: relative;
     width: 100px;
     border-radius: 100%;
     width: 20px;
     height: 20px;
-    border: 1px solid black;
-    background: #352E4F;
-    margin: auto;
-}
-
-.dot {
-    width: 40%;
-    height: 40%;
+    border: 3px solid #352E4F;
     background: #fff;
     margin: auto;
-    margin-top: 30%;
-    border-radius: 100%;
-    
 }
-
-
-/* .studis {
-    position: absolute;
-    top: 30%;
-    right: -140%;
-    width: 100%;
-} */
 
 .brdr::before {
     content: '';
@@ -202,12 +207,11 @@ body {
     top: 100%;
 }
 
-.last::before{
+.last::before {
     content: '';
     height: 0;
     width: 0;
 }
-
 
 .brdr-1::after {
     content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, tenetur!';
@@ -215,9 +219,9 @@ body {
     height: 30px;
     position: absolute;
     display: block;
-     /* background: blue;  */
-    left: 110%;    
-    top: 0;
+    /* background: blue;  */
+    left: 150%;
+    top: -45%;
 }
 
 .brdr-2::after {
@@ -226,27 +230,15 @@ body {
     height: 30px;
     position: absolute;
     display: block;
-     /* background: blue;  */
-    right:  110%;    
-    top: 0;
+    /* background: blue;  */
+    right: 150%;
+    top: -45%;
 }
 
 .journey-img {
-    background: url(../img/jorney-div.png);
+    background: url(../img/jorney-div.png) no-repeat;
+    /*background-size: cover;*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*     MOBILE   */
 
@@ -264,7 +256,6 @@ body {
         margin: auto;
         margin-top: 50px;
     }
-
     .logo {
         width: 40%;
     }
@@ -274,7 +265,7 @@ body {
 
 @media(min-width: 576px) {
     .skills-div {
-        height: 90vh;
+        height: 40vh;
     }
     .skills-parent {
         height: 70vh;
@@ -312,15 +303,13 @@ body {
     .animated {
         transition: all .2s ease-in;
     }
-
-    .animated:hover > h3 {
+    .animated:hover>h3 {
         color: #fff;
     }
-
     .animated:hover {
         /*transform: scale(1.2);*/
         /* Rectangle 2 Copy: */
-        background: linear-gradient(-197deg, rgba(119,148,189,0.82) 0%, #425B88 98%);
+        background: linear-gradient(-197deg, rgba(119, 148, 189, 0.82) 0%, #425B88 98%);
         color: #fff;
         animation: .5s linear .1s animationFrames;
         -webkit-box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);

@@ -20,26 +20,38 @@
     <div class="home-overlay"></div>
     <div class="row pt-4">
       <div class="col col-md-2 offset-md-1 pt-6 mb-5">
-        <img src="img/igdeveloperslogo.png" alt="" class="logo mx-5  ">
+        <img src="img/igdeveloperslogo.png" alt="" class="logo mx-5">
       </div>
       <div class="col  col-md-2 offset-md-6 ">
         <div class="d-flex justify-content-around mt-md-4">
           <div class="">
-            <i class="fa fa-facebook-f fa-md-2x"></i>
+            <a class="" href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook-f fa-md-2x"></i>
+            </a>
           </div>
           <div class="">
-            <i class="fa fa-facebook-f fa-md-2x"></i>
+            <a class="" href="https://instagram.com/igdevelopers" target="_blank">
+              <i class="fab fa-instagram fa-md-2x"></i>
+            </a>
           </div>
           <div class="">
-            <i class="fa fa-facebook-f fa-md-2x"></i>
+            <a class="" href="https://github.com/Igor2122" target="_blank">
+              <i class="fab fa-github fa-md-2x"></i>
+            </a>
           </div>
           <div class="">
-            <i class="fa fa-facebook-f fa-md-2x"></i>
+            <i class="fas fa-briefcase fa-md-2x"></i>
+          </div>
+          <div class="">
+            <a class="" href="http://igdevelopers.com" target="_blank">
+              <i class="fas fa-envelope fa-md-2x"></i>
+            </a>
           </div>
         </div>
       </div>
       <!-- /social icon div -->
     </div>
+    <!--   Center h1 content  -->
     <div class="row align-items-center center-div no-gutters">
       <div class="col col-md-6 offset-md-3 w-100 text-center">
         <div class="image-border mx-auto row align-items-center">
@@ -61,7 +73,7 @@
 
   <!-- work secion  -->
   <!-- menu  -->
-  <div id="sections" class="row">
+  <div id="sections" class="row work-seciton">
     <div class="col">
       <div class="d-flex flex-row text-white align-items-stretch text-center menu">
         <div class="port-item p-2 skills" data-toggle="collapse" data-target="#studies">
@@ -86,44 +98,48 @@
         </div>
       </div>
 
+      <div class="rectange"></div>
+
       <!-- Collapse Modules  -->
       <div id="studies" class="collapse show ">
-        <h2 class="p-5 mx-auto">My Skills</h2>
         <div class="w-100">
+          <h2 class="p-5 m-auto">My Skills</h2>
         </div>
-        <div class="skills-div d-flex align-items-center justify-content-around flex-wrap">
-          <div class="d-flex first-item border row-hl align-items-end brdr-bttm">
-            <h3>Web
-              <br>
-              <span class="ml-3">Stack</span>
-            </h3>
-            <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-          </div>
-          <div class="d-flex second animated border row-hl align-items-end brdr-bttm">
-            <h3>Web
-              <br>
-              <span class="ml-3">Stack</span>
-            </h3>
-            <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-          </div>
-          <div class="d-flex border row-hl align-items-end brdr-bttm">
-            <h3>Web
-              <br>
-              <span class="ml-3">Stack</span>
-            </h3>
-            <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-          </div>
-
-
-          <div class="item " data-toggle="modal" data-target="#loginModal">
-            <img class="js" src="img/icons/javascript.png"></img>
-            <img class="html" src="img/icons/html5.png"></img>
-            <div class="d-flex second animated brdr-bttm border row-hl align-items-end">
+        <div class="container skills-divs">
+          <div class="skills-div d-flex align-items-center justify-content-around flex-wrap">
+            <div class="d-flex first-item border row-hl align-items-end brdr-bttm">
               <h3>Web
                 <br>
                 <span class="ml-3">Stack</span>
               </h3>
               <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
+            </div>
+            <div class="d-flex second animated border row-hl align-items-end brdr-bttm">
+              <h3>Web
+                <br>
+                <span class="ml-3">Stack</span>
+              </h3>
+              <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
+            </div>
+            <div class="d-flex border row-hl align-items-end brdr-bttm">
+              <h3>Web
+                <br>
+                <span class="ml-3">Stack</span>
+              </h3>
+              <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
+            </div>
+
+
+            <div class="item " data-toggle="modal" data-target="#loginModal">
+              <img class="js" src="img/icons/javascript.png"></img>
+              <img class="html" src="img/icons/html5.png"></img>
+              <div class="d-flex second animated brdr-bttm border row-hl align-items-end">
+                <h3>Web
+                  <br>
+                  <span class="ml-3">Stack</span>
+                </h3>
+                <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -172,25 +188,15 @@
     <div class="row  text-center">
       <div class=" col-md-6  p-4 d-flex flex-column justify-content-between  learn-story-div ">
         <h2 style="color: black; ">My Journey</h2>
-        <div class="brdr brdr-2">
-          <div class="dot"></div>
-        </div>
-        <div class="  brdr brdr-1">
-          <div class="dot"></div>
-        </div>
-        <div class="  brdr brdr-2">
-          <div class="dot"></div>
-        </div>
-        <div class="  brdr brdr-1">
-          <div class="dot"></div>
-        </div>
-        <div class="  brdr last brdr-2">
-          <div class="dot"></div>
-        </div>
+        <div class="brdr brdr-2"></div>
+        <div class="  brdr brdr-1"></div>
+        <div class="  brdr brdr-2"></div>
+        <div class="  brdr brdr-1"></div>
+        <div class="  brdr last brdr-2"></div>
       </div>
 
       <div class="col-md-6 p-4 item-hl d-none d-md-block order-2 journey-img">
-        
+
       </div>
     </div>
     <!-- </div> -->
