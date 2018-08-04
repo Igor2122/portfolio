@@ -203,7 +203,7 @@ body {
 }
 
 .brdr-1::after {
-    content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, tenetur!';
+    content: 'Lorem ipsum!';
     width: 200px;
     height: 30px;
     position: absolute;
@@ -214,7 +214,7 @@ body {
 }
 
 .brdr-2::after {
-    content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, tenetur!';
+    content: 'Lorem ipsum ';
     width: 200px;
     height: 30px;
     position: absolute;
@@ -240,14 +240,21 @@ body {
         overflow: hidden;
     }
     .row-hl {
-        height: 100px;
-        width: 100px;
+        height:14%;
+        width: 200px;
         margin: auto;
         margin-top: 50px;
     }
     .logo {
         width: 40%;
     }
+    
+    .skills-div {
+        height: 80vh;
+    }
+    
+    
+    
 }
 
 /*     DESKTOP   */
