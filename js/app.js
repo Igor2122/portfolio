@@ -2,36 +2,42 @@
 
 const jsIcon = document.querySelector('.js');
 const hmtlIcon = document.querySelector('.html');
-const itemDiv = document.querySelector('.item');
+const itemDiv = document.querySelectorAll('.item');
 
 // Event lisntner 
+let allItems; 
 
-document.querySelector('.item').addEventListener('mouseenter', animate_item);
+for(let i = 0; i < itemDiv.length; i++){
+    itemDiv[i].addEventListener('mouseout', unAnimate);
+    itemDiv[i].addEventListener('mouseenter', animate_item);
+}
 
-document.querySelector('.item').addEventListener('mouseout', unAnimate);
-// document.getElementById('sections').addEventListener('mouseover', unAnimate);
+let anim1;
+let anim2;
+let anim3;
 
+const animationForward = function translateElemtns() {
+    anim1 = setTimeout(function(){
+        jsIcon.setAttribute('style', 'transform: translateX(-100%) rotate(-45deg) ;');
+    }, 50);
+    hmtlIcon.setAttribute('style', 'transform: translateX(100%) rotate(45deg);');
+    // itemDiv.style.transform = "rotate(7deg)";
+}
 
+const animationBackward = function () {
+    jsIcon.setAttribute('style', 'transform: translateX(0%) rotate(0deg);');
+    hmtlIcon.setAttribute('style', 'transform: translateX(0%) rotate(0deg);');
+    
+}
 
-// function translateElemtns() {
-//         jsIcon.setAttribute('style', 'transform: translateX(-100%) rotate(-45deg);');
-//         hmtlIcon.setAttribute('style', 'transform: translateX(100%) rotate(45deg);');
-//         itemDiv.style.transform = "rotate(7deg)";
-//         itemDiv.style.transform = "scale(1.2)";
-
+let anim;
 
 function animate_item() {
-    // setTimeout(translateElemtns
-    // , 500);
-    jsIcon.setAttribute('style', 'transform: translateX(-100%) rotate(-45deg);');
-    hmtlIcon.setAttribute('style', 'transform: translateX(100%) rotate(45deg);');
-    itemDiv.style.transform = "rotate(7deg)";
-    itemDiv.style.transform = "scale(1.2)";
+    // itemDiv.style.transform = "scale(1.2)";
+    anim = setTimeout('animationForward()', 200);
 };
 
 function unAnimate() {
-    jsIcon.setAttribute('style', 'transform: translateX(0%) rotate(0deg);');
-    hmtlIcon.setAttribute('style', 'transform: translateX(0%) rotate(0deg);');
-    console.log('leave');
-    itemDiv.style.transform = "rotate(0deg)";
+    clearTimeout(anim);
+    animationBackward();
 }

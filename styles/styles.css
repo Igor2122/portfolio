@@ -1,19 +1,21 @@
-@font-face {
-    font-family: h1font, Arial, Helvetica, sans-serif;
-    src: url(fonts/Areno-Rough.ttf);
-}
 
 h1 {
-    /* font-family: h1font; */
+    font-family: 'Rubik', sans-serif;
     color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 56px;
+    margin-top: 5%;
 }
 
 h3 {
     color: #425B88;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2,
 p {
+    font-family: 'Roboto', sans-serif;
     color: #fff;
 }
 
@@ -93,11 +95,24 @@ body {
 }
 
 .menu-overlay {
-    background: red;
+    background: rgb(161, 144, 231);;
     position: absolute;
     height: 100%;
     width: 100%;
     transform: translateX(-90%);
+}
+
+/* SKILLS SECTION  */
+
+#studies {
+    height: 90vh;
+    background: F0EFF5;
+}
+
+.studies-heading{
+    height: 40%;
+    background: rgba(140, 223, 209, 0.295);
+    color: #425B88;
 }
 
 .skills {
@@ -118,10 +133,6 @@ body {
     background: #352E4F;
 }
 
-#studies {
-    height: 90vh;
-    background: F0EFF5;
-}
 
 .work-seciton {
     position: relative;
@@ -129,12 +140,8 @@ body {
 }
 
 .skills-divs {
-    background: red;
-    /* height: 100%; */
+    background: rgba(140, 125, 221, 0.486);
 }
-
-
-
 
 #studies {
     background: linear-gradient(-155deg, rgba(217, 215, 228, 0.55) 0%, rgba(252, 252, 255, 0.55) 98%);
@@ -157,8 +164,8 @@ body {
 .js,
 .html {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 20px;
+    width: 20px;
     transition: all .3s;
     z-index: -1;
 }
@@ -287,8 +294,8 @@ body {
     .js,
     .html {
         position: absolute;
-        height: 100px;
-        width: 100px;
+        height: 60px;
+        width: 60px;
         transition: all .3s;
         z-index: -1;
     }
@@ -296,18 +303,16 @@ body {
         right: 0;
         top: 0;
     }
-    .animated {
-        transition: all .2s ease-in;
+    .item {
+        transition: all .2s ease-in-out;
     }
     .animated:hover>h3 {
         color: #fff;
     }
     .animated:hover {
-        /*transform: scale(1.2);*/
-        /* Rectangle 2 Copy: */
         background: linear-gradient(-197deg, rgba(119, 148, 189, 0.82) 0%, #425B88 98%);
         color: #fff;
-        animation: .5s linear .1s animationFrames;
+        animation: .3s linear .1s animationFrames;
         -webkit-box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
         -moz-box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
         box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
@@ -350,31 +355,31 @@ body {
             transform: rotate(0deg);
         }
         10% {
-            transform: rotate(-3deg);
+            transform: rotate(-4deg);
         }
         20% {
-            transform: rotate(-3deg);
+            transform: rotate(-5deg);
         }
         30% {
-            transform: rotate(3deg);
+            transform: rotate(6deg);
         }
         40% {
-            transform: rotate(-3deg);
+            transform: rotate(-7deg);
         }
         50% {
-            transform: rotate(3deg);
+            transform: rotate(7deg);
         }
         60% {
-            transform: rotate(-3deg);
+            transform: rotate(-6deg);
         }
         70% {
-            transform: rotate(3deg);
+            transform: rotate(5deg);
         }
         80% {
-            transform: rotate(-3deg);
+            transform: rotate(-4deg);
         }
         90% {
-            transform: rotate(3deg);
+            transform: rotate(4deg);
         }
         100% {
             transform: rotate(0deg);
