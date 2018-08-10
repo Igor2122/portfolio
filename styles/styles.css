@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 h1 {
     font-family: 'Rubik', sans-serif;
@@ -25,7 +30,6 @@ body {
 
 #home {
     height: 100vh;
-    width: 100%;
     background: #D3D3D3;
     background: url("../img/home-background.jpg");
     -webkit-background-size: cover;
@@ -77,460 +81,63 @@ body {
 #sections {
     height: 100vh;
     position: relative;
-}
-
-.skills-menu {
-    height: 10%;
-    overflow: hidden;
-}
-
-.menu {
-    position: relative;
-    /* background: #425B88; */
-    color: #fff;
-}
-
-.port-item {
-    width: 25%;
-}
-
-.menu-overlay {
-    background: rgb(161, 144, 231);;
-    position: absolute;
-    height: 100%;
     width: 100%;
-    transform: translateX(-90%);
 }
 
-/* SKILLS SECTION  */
-
-#studies {
-    height: 90vh;
-    background: F0EFF5;
-}
-
-.studies-heading{
-    height: 40%;
-    /* background: rgba(140, 223, 209, 0.295); */
-    color: #425B88;
-}
-
-.skills {
-    background: #F1F0F5;
-    color: #425B88;
-}
-
-.studies {
-    background: #BFB8DB;
-    color: #425B88;
-}
-
-.projects {
-    background: #5F587C;
-}
-
-.contact {
-    background: #352E4F;
-}
-
-
-.work-seciton {
-    position: relative;
-    /* background: pink; */
-}
-
-.skills-divs {
-    background: rgba(140, 125, 221, 0.486);
-}
-
-#studies {
-    /* background: linear-gradient(-155deg, rgba(217, 215, 228, 0.55) 0%, rgba(252, 252, 255, 0.55) 98%); */
-    /* width: 25%; */
-    cursor: pointer;
-    background: #F1F0F5;
-}
-
-.brdr-bttm {
-    border-bottom: 3px #352E4F solid !important;
-}
-
-.animated {
-    background: #fff;
+.my-sevices {
+    height: 100vh;
+    width: 100%;
+    background: #020312;
 }
 
 .item {
+    /* background: #fff; */
+    width: 200px;
+    height: 200px;
+    margin: auto;
     position: relative;
+    transition: all .5s;
 }
 
-#skills-overlay {
-    height: 100vh;
-    /* Rectangle 3: */
-    background: rgba(23, 22, 41, 0.77);
-    border: 1px solid #161B32;
-  }
+.spacer {
+    height: 30vh;
+}
 
-.js,
-.html {
+.fas {
+    color: #EBC076;
+}
+
+.link {
+    color: #fff;
+    height: 20%;
+    position: relative;
+    left: -50%;
+    transition: all .6s;
+}
+
+.link::after{
+    content: '';
     position: absolute;
-    height: 20px;
-    width: 20px;
-    transition: all .3s;
-    z-index: -1;
+    width: 250%;
+    height: 5px;
+    background: #EBC076;
+    top: 28%;
+    left: 50%;
 }
 
-.html {
-    right: 0;
-    top: 0;
-}
-
-/* Work history section  */
-
-.learn-story-div {
-    height: 90vh;
-}
-
-.brdr {
-    position: relative;
-    width: 100px;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    border: 3px solid #352E4F;
-    background: #fff;
+h1 {
     margin: auto;
 }
 
-.brdr::before {
-    content: '';
-    width: 2px;
-    height: 110px;
-    position: absolute;
-    background: #352E4F;
-    display: inline-block;
-    /* left: 45%; */
-    top: 100%;
-}
 
-.last::before {
-    content: '';
-    height: 0;
-    width: 0;
-}
 
-.brdr-1::after {
-    content: 'Lorem ipsum!';
-    width: 200px;
-    height: 30px;
-    position: absolute;
-    display: block;
-    /* background: blue;  */
-    left: 150%;
-    top: -45%;
-}
 
-.brdr-2::after {
-    content: 'Lorem ipsum ';
-    width: 200px;
-    height: 30px;
-    position: absolute;
-    display: block;
-    /* background: blue;  */
-    right: 150%;
-    top: -45%;
-}
 
-.journey-img {
-    background: url(../img/jorney-div.png) no-repeat;
-    /*background-size: cover;*/
-}
 
-/*     MOBILE   */
 
-@media(max-width: 576px) {
-    .image-border {
-        width: 100px;
-        height: 100px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    .row-hl {
-        height:14%;
-        width: 200px;
-        margin: auto;
-        margin-top: 50px;
-    }
-    .logo {
-        width: 40%;
-    }
-    
-    .skills-div {
-        height: 80vh;
-    }
-    
-    
-    
-}
 
-/*     DESKTOP   */
 
-@media(min-width: 576px) {
-    .skills-div {
-        height: 40vh;
-    }
-    .skills-parent {
-        height: 70vh;
-    }
-    .skills-item {
-        width: 20;
-        height: 40%;
-    }
-    .second {
-        margin-top: -100px;
-        position: relative;
-    }
-    .fa-angle-double-right {
-        cursor: pointer;
-    }
-    .row-hl {
-        height: 200px;
-        width: 200px;
-    }
-    .item {
-        position: relative;
-    }
-    .js,
-    .html {
-        position: absolute;
-        height: 60px;
-        width: 60px;
-        transition: all .3s;
-        z-index: -1;
-    }
-    .html {
-        right: 0;
-        top: 0;
-    }
-    .item {
-        transition: all .2s ease-in-out;
-    }
-    .animated:hover>h3 {
-        color: #fff;
-    }
-    .animated:hover {
-        background: linear-gradient(-197deg, rgba(119, 148, 189, 0.82) 0%, #425B88 98%);
-        color: #fff;
-        animation: .3s linear .1s animationFrames;
-        -webkit-box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
-        -moz-box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
-        box-shadow: -23px 18px 39px -12px rgba(0, 0, 0, 0.47);
-        /*animation: animationFrames linear 1s 1s;*/
-        /*animation-delay: 1s;*/
-        /*animation-iteration-count: 1;*/
-        /*transform-origin: 50% 50%;*/
-        /*-webkit-animation: animationFrames linear .5s;*/
-        /*-webkit-animation-iteration-count: 1;*/
-        /*-webkit-transform-origin: 50% 50%;*/
-        /*-moz-animation: animationFrames linear 1s;*/
-        /*-moz-animation-iteration-count: 1;*/
-        /*-moz-transform-origin: 50% 50%;*/
-        /*-o-animation: animationFrames linear 1s;*/
-        /*-o-animation-iteration-count: 1;*/
-        /*-o-transform-origin: 50% 50%;*/
-        /*-ms-animation: animationFrames linear 1s;*/
-        /*-ms-animation-iteration-count: 1;*/
-        /*-ms-transform-origin: 50% 50%;*/
-    }
-    /*.first-item  {*/
-    /*    animation: animationFrames linear 1s;*/
-    /*    animation-iteration-count: 1;*/
-    /*    transform-origin: 50% 50%;*/
-    /*    -webkit-animation: animationFrames linear 1s;*/
-    /*    -webkit-animation-iteration-count: 1;*/
-    /*    -webkit-transform-origin: 50% 50%;*/
-    /*    -moz-animation: animationFrames linear 1s;*/
-    /*    -moz-animation-iteration-count: 1;*/
-    /*    -moz-transform-origin: 50% 50%;*/
-    /*    -o-animation: animationFrames linear 1s;*/
-    /*    -o-animation-iteration-count: 1;*/
-    /*    -o-transform-origin: 50% 50%;*/
-    /*    -ms-animation: animationFrames linear 1s;*/
-    /*    -ms-animation-iteration-count: 1;*/
-    /*    -ms-transform-origin: 50% 50%;*/
-    /*}*/
-    @keyframes animationFrames {
-        0% {
-            transform: rotate(0deg);
-        }
-        10% {
-            transform: rotate(-4deg);
-        }
-        20% {
-            transform: rotate(-5deg);
-        }
-        30% {
-            transform: rotate(6deg);
-        }
-        40% {
-            transform: rotate(-7deg);
-        }
-        50% {
-            transform: rotate(7deg);
-        }
-        60% {
-            transform: rotate(-6deg);
-        }
-        70% {
-            transform: rotate(5deg);
-        }
-        80% {
-            transform: rotate(-4deg);
-        }
-        90% {
-            transform: rotate(4deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    @-moz-keyframes animationFrames {
-        0% {
-            transform: rotate(0deg);
-        }
-        10% {
-            transform: rotate(-3deg);
-        }
-        20% {
-            transform: rotate(-3deg);
-        }
-        30% {
-            transform: rotate(3deg);
-        }
-        40% {
-            transform: rotate(-3deg);
-        }
-        50% {
-            transform: rotate(3deg);
-        }
-        60% {
-            transform: rotate(-3deg);
-        }
-        70% {
-            transform: rotate(3deg);
-        }
-        80% {
-            transform: rotate(-3deg);
-        }
-        90% {
-            transform: rotate(3deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    @-webkit-keyframes animationFrames {
-        0% {
-            transform: rotate(0deg);
-        }
-        10% {
-            transform: rotate(-3deg);
-        }
-        20% {
-            transform: rotate(-3deg);
-        }
-        30% {
-            transform: rotate(3deg);
-        }
-        40% {
-            transform: rotate(-3deg);
-        }
-        50% {
-            transform: rotate(3deg);
-        }
-        60% {
-            transform: rotate(-3deg);
-        }
-        70% {
-            transform: rotate(3deg);
-        }
-        80% {
-            transform: rotate(-3deg);
-        }
-        90% {
-            transform: rotate(3deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    @-o-keyframes animationFrames {
-        00% {
-            transform: rotate(0deg);
-        }
-        10% {
-            transform: rotate(-3deg);
-        }
-        20% {
-            transform: rotate(-3deg);
-        }
-        30% {
-            transform: rotate(3deg);
-        }
-        40% {
-            transform: rotate(-3deg);
-        }
-        50% {
-            transform: rotate(3deg);
-        }
-        60% {
-            transform: rotate(-3deg);
-        }
-        70% {
-            transform: rotate(3deg);
-        }
-        80% {
-            transform: rotate(-3deg);
-        }
-        90% {
-            transform: rotate(3deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    @-ms-keyframes animationFrames {
-        0% {
-            transform: rotate(0deg);
-        }
-        10% {
-            transform: rotate(-3deg);
-        }
-        20% {
-            transform: rotate(-3deg);
-        }
-        30% {
-            transform: rotate(3deg);
-        }
-        40% {
-            transform: rotate(-3deg);
-        }
-        50% {
-            transform: rotate(3deg);
-        }
-        60% {
-            transform: rotate(-3deg);
-        }
-        70% {
-            transform: rotate(3deg);
-        }
-        80% {
-            transform: rotate(-3deg);
-        }
-        90% {
-            transform: rotate(3deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-}
+
+
+
+
