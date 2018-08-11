@@ -13,26 +13,58 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+  <link rel="stylesheet" href="styles/responsive-styles.css" type="text/css" />
   <title>Igor Pavlneko Portfolio</title>
 </head>
 
 <body>
-  <div id="home" class="home">
-    <div class="home-overlay"></div>
+    <div id="home" class="home">
+  <head>
+      <nav class="navbar no-gutters m-0 p-0  fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/igdeveloperslogo.png" alt="" class="logo p-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </head>
+  
+    <div class="home-overlay  w-100  no-gutters"></div>
     <!-- Social media items -->
     <div class="row pt-4">
       <div class="col col-md-2 offset-md-1 pt-6 mb-5">
-        <img src="img/igdeveloperslogo.png" alt="" class="logo mx-5">
+        
       </div>
-      <div class="col  col-md-2 offset-md-6 ">
-        <div class="d-flex justify-content-around mt-md-4">
+      <div class="col col-md-2 ml-auto ">
+        <div class="d-flex justify-content-around mt-3 mt-md-4">
           <div class="">
             <a class="" href="https://facebook.com" target="_blank">
               <i class="fab fa-facebook-f fa-md-2x"></i>
             </a>
           </div>
           <div class="">
-            <a class="" href="https://instagram.com/igdevelopers" target="_blank">
+            <a class="" href="https ://instagram.com/igdevelopers" target="_blank">
               <i class="fab fa-instagram fa-md-2x"></i>
             </a>
           </div>
@@ -44,30 +76,25 @@
           <div class="">
             <i class="fas fa-briefcase fa-md-2x"></i>
           </div>
-          <div class="">
-            <a class="" href="http://igdevelopers.com" target="_blank">
-              <i class="fas fa-envelope fa-md-2x"></i>
-            </a>
-          </div>
         </div>
       </div>
-      <!-- /social icon div -->
     </div>
+      <!-- /social icon div -->
     <!--   Center  -->
     <div class="row align-items-center center-div no-gutters">
-      <div class="col col-md-6 offset-md-3 text-center">
+      <div class="col col-md-6 offset-md-3 text-center  mt-md-5">
         <div class="image-border mx-auto row align-items-center">
-          <img class=" center-pic rounded mx-auto mt-5" src="img/landing-page-photo.png"></img>
+          <img class="rounded mx-auto " src="img/landing-page-photo.png"></img>
         </div>
         <h1>Igor Pavlenko</h1>
         <hr class="line ">
         <h2 class="mt-2">Web Developer</h2>
-        <p class="m-5">Hi there!, I am a passionate front Web Developer.Striving on minimalist and point fron-end webdesing
+        <p class="m-3">Hi there!, I am a passionate front Web Developer.Striving on minimalist and point fron-end webdesing
           <br>Looking for a new challange at the moement</p>
-        <button class="">Get in Touch</button>
+        <!-- <button class="">Get in Touch</button> -->
       </div>
     </div>
-    <div class="col col-md-6 offset-md-3 w-100 text-center">
+    <div class="col col-md-6 offset-md-3 text-center">
       <i class="fa fa-angle-down fa-5x "></i>
     </div>
   </div>
@@ -77,54 +104,65 @@
   <div id="sections">
     <div class="my-sevices m-0">
       <div class="spacer text-center">
-          <h1 class="pt-5">My Services</h1>
+        <h1 class="pt-5">My Services</h1>
       </div>
       <div class="d-md-flex justify-content-around m-md-5 ">
         <div class="item">
-            <i class="fas fa-code fa-3x mb-2"></i>
-            <h2>Web Design</h2>
-            <p>Custom coded websites <br>Using all latest technologies</p>
-            <div class="link">
-              learn more
-            </div>
+          <i class="icons fas fa-code fa-3x mb-2"></i>
+          <h2>Web Design</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
         </div>
         <div class="item">
-            <i class="fas fa-code fa-3x mb-2"></i>
-            <h2>Web Design</h2>
-            <p>Custom coded websites <br>Using all latest technologies</p>
-            <div class="link">
-                learn more
-              </div>
+          <i class="icons fas fa-camera-retro fa-3x mb-2"></i>
+          <h2>Photography</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
         </div>
         <div class="item">
-            <i class="fas fa-code fa-3x mb-2"></i>
-            <h2>Web Design</h2>
-            <p>Custom coded websites <br>Using all latest technologies</p>
-            <div class="link">
-                learn more
-              </div>
+          <i class="icons fas fa-pen-nib fa-3x mb-2"></i>
+          <h2>Desing</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
         </div>
       </div>
       <div class="d-md-flex justify-content-around m-md-5">
-          <div class="item">
-              <i class="fas fa-code fa-3x mb-2"></i>
-              <h2>Web Design</h2>
-              <p>Custom coded websites <br>Using all latest technologies</p>
-          </div>
-          <div class="item">
-              <i class="fas fa-code fa-3x mb-2"></i>
-              <h2>Web Design</h2>
-              <p>Custom coded websites <br>Using all latest technologies</p>
-          </div>
-          <div class="item">
-              <i class="fas fa-code fa-3x mb-2"></i>
-              <h2>Web Design</h2>
-              <p>Custom coded websites <br>Using all latest technologies</p>
-          </div>
+        <div class="item">
+          <i class="icons fab fa-wordpress-simple fa-3x mb-2 icons"></i>
+          <h2>Wodpress Websites</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
+        <div class="item">
+          <i class="icons fas fa-code fa-3x mb-2"></i>
+          <h2>Web Design</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
+        <div class="item">
+          <i class="icons fas fa-code fa-3x mb-2"></i>
+          <h2>Web Design</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
       </div>
     </div>
 
 
+  </div>
+
+  <div id="sections" class="about-me">
+    <div class="row align-items-center">
+      <div class="d-flex">
+        
+      </div>
+    </div>
   </div>
 
   <!-- Footer   -->

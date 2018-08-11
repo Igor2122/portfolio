@@ -4,11 +4,13 @@ const items = document.querySelectorAll('.item');
 
 
 class Ui {
-    animate(target) {
+    animate(target, target2) {
         target.style.left = '30px';
+        target2.style.top = '-1px';
     }
-    unanimate(target) {
+    unanimate(target, target2) {
         target.style.left = '';
+        target2.style.top = '';
     }
 }
 
@@ -18,17 +20,20 @@ for (let i = 0; i < items.length; i++) {
     items[i].addEventListener('mouseenter', function (e) {
         
         const link = e.target.childNodes[7];
+        const link2 = e.target.childNodes[1];
+        console.log(link2);
         
         if (e.target.classList.contains('item')) {
-            ui.animate(link);
+            ui.animate(link, link2);
             console.log('entered');
         }
         
     });
     items[i].addEventListener('mouseleave', function (e) {
+        const link2 = e.target.childNodes[1];
         const link = e.target.childNodes[7];
 
-        ui.unanimate(link);
+        ui.unanimate(link, link2);
     })
 }
 
