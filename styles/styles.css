@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 h1 {
@@ -24,9 +24,6 @@ p {
     color: #fff;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 #home {
     height: 100vh;
@@ -45,7 +42,18 @@ body {
     background: rgba(20, 21, 46, 0.72);
 }
 
+.navbar {
+    background: #020312!important;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff!important;
+}
+
 .logo {
+    position: absolute;
+    z-index: 999999999999999999999999999999;
     width: 150px;
 }
 
@@ -67,15 +75,13 @@ body {
     overflow: hidden;
 }
 
-.center-pic {
-    width: 100%;
-    height: 100%;
-}
+
 
 .line {
     background: #fff;
     height: 1px;
     width: 80%;
+    margin: auto;
 }
 
 #sections {
@@ -84,7 +90,8 @@ body {
     width: 100%;
 }
 
-.my-sevices {
+.my-sevices,
+.about-me {
     height: 100vh;
     width: 100%;
     background: #020312;
@@ -93,18 +100,22 @@ body {
 .item {
     /* background: #fff; */
     width: 200px;
-    height: 200px;
+    /* height: 200px; */
     margin: auto;
     position: relative;
     transition: all .5s;
+    overflow-x: hidden;
 }
 
 .spacer {
-    height: 30vh;
+    height: 30vh
+
 }
 
-.fas {
+.icons {
     color: #EBC076;
+    position: relative;
+    z-index: 1;
 }
 
 .link {
