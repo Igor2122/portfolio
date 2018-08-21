@@ -124,6 +124,7 @@ p {
     position: relative;
     left: -50%;
     transition: all .6s;
+    overflow-x: hidden;
 }
 
 .link::after{

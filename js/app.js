@@ -6,7 +6,7 @@ const items = document.querySelectorAll('.item');
 class Ui {
     animate(target, target2) {
         target.style.left = '30px';
-        target2.style.top = '-1px';
+        target2.style.top = '-5px';
     }
     unanimate(target, target2) {
         target.style.left = '';
