@@ -24,6 +24,18 @@
   .my-sevices {
     height: auto;
   }
+
+  .image-border{
+    display: none;
+  }
+
+  .animated-border {
+    width: 100%;
+  }
+
+  .about-content {
+    height: 300px;
+}
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

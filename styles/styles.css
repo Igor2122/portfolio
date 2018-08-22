@@ -4,6 +4,9 @@
     /* overflow-x: hidden; */
 }
 
+
+ 
+
 h1 {
     font-family: 'Rubik', sans-serif;
     color: #fff;
@@ -11,6 +14,11 @@ h1 {
     font-weight: 800;
     font-size: 56px;
     margin-top: 5%;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    /* font-size: 56px; */
 }
 
 h3 {
@@ -24,6 +32,9 @@ p {
     color: #fff;
 }
 
+h4 {
+    font-size: 1em;
+}
 
 #home {
     height: 100vh;
@@ -43,12 +54,12 @@ p {
 }
 
 .navbar {
-    background: #020312!important;
+    background: #020312 !important;
     color: #fff;
 }
 
 .nav-link {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .logo {
@@ -75,8 +86,6 @@ p {
     overflow: hidden;
 }
 
-
-
 .line {
     background: #fff;
     height: 1px;
@@ -87,12 +96,6 @@ p {
 #sections {
     height: 100vh;
     position: relative;
-    width: 100%;
-}
-
-.my-sevices,
-.about-me {
-    height: 100vh;
     width: 100%;
     background: #020312;
 }
@@ -108,8 +111,7 @@ p {
 }
 
 .spacer {
-    height: 30vh
-
+    height: 18vh
 }
 
 .icons {
@@ -127,7 +129,7 @@ p {
     overflow-x: hidden;
 }
 
-.link::after{
+.link::after {
     content: '';
     position: absolute;
     width: 250%;
@@ -141,15 +143,78 @@ h1 {
     margin: auto;
 }
 
+/* About section styles */
+
+.about-me {
+    /* height: 60%; */
+}
+
+.about-content {
+    
+    /* height: 300px; */
+    background: red;
+    /* background: #020312; */
+    background: center / contain no-repeat url('../img/home-background.jpg') ;
+}
 
 
+.about-txt {
+    height: 100%;
+    /* padding-left: 10%; */
+}
 
+.card {
+    background: #020312;
+}
 
+.card-body>h3 {
+    color: #EBC076;
+    font-size: 1.5em;
+}
 
+/* ANIMATED BORDER CLASS */
 
+.animated-border {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1em;
+    position: relative;
+    overflow: hidden;
+}
 
+.animated-border::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    transform: translateX(100%);
+}
+.animated-border::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 4px;
+    width: 100%;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transform: translateX(-100%);
+}
 
-
-
-
+.animated-border:hover::before{
+    border-color: #EBC076;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+.animated-border:hover::after{
+    border-color: #EBC076;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
 
