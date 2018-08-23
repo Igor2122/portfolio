@@ -7,29 +7,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+  <link rel="stylesheet" href="styles/responsive-styles.css" type="text/css" />
   <title>Igor Pavlneko Portfolio</title>
 </head>
 
 <body>
-  <div id="home" class="home">
+    <div id="home" class="home">
+  <head>
+      <nav class="navbar no-gutters m-0 p-0  fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/igdeveloperslogo.png" alt="" class="logo p-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </head>
+  
+   <!-- OVERLAY -->
     <div class="home-overlay"></div>
+
+    <!-- Social media items -->
+
     <div class="row pt-4">
-      <div class="col col-md-2 offset-md-1 pt-6 mb-5">
-        <img src="img/igdeveloperslogo.png" alt="" class="logo mx-5">
+      <div class="col col-md-6 pt-6 mb-5">
+        
       </div>
-      <div class="col  col-md-2 offset-md-6 ">
-        <div class="d-flex justify-content-around mt-md-4">
+      <div class="col col-md-6 ml-auto ">
+        <div class="d-flex justify-content-around mt-3 mt-md-4">
           <div class="">
             <a class="" href="https://facebook.com" target="_blank">
               <i class="fab fa-facebook-f fa-md-2x"></i>
             </a>
           </div>
           <div class="">
-            <a class="" href="https://instagram.com/igdevelopers" target="_blank">
+            <a class="" href="https ://instagram.com/igdevelopers" target="_blank">
               <i class="fab fa-instagram fa-md-2x"></i>
             </a>
           </div>
@@ -41,190 +79,95 @@
           <div class="">
             <i class="fas fa-briefcase fa-md-2x"></i>
           </div>
-          <div class="">
-            <a class="" href="http://igdevelopers.com" target="_blank">
-              <i class="fas fa-envelope fa-md-2x"></i>
-            </a>
-          </div>
         </div>
       </div>
-      <!-- /social icon div -->
     </div>
+      <!-- /social icon div -->
+
+
+
+      
     <!--   Center  -->
     <div class="row align-items-center center-div no-gutters">
-      <div class="col col-md-6 offset-md-3 w-100 text-center">
+      <div class="col col-md-6 offset-md-3 text-center  mt-md-5">
         <div class="image-border mx-auto row align-items-center">
-          <img class=" center-pic rounded mx-auto " src="img/landing-page-photo.png"></img>
+          <img class="rounded mx-auto " src="img/landing-page-photo.png"></img>
         </div>
         <h1>Igor Pavlenko</h1>
         <hr class="line ">
         <h2 class="mt-2">Web Developer</h2>
-        <p class="m-5">Hi there!, I am a passionate front Web Developer.Striving on minimalist and point fron-end webdesing <br>Looking for a new challange at the moement</p>
-        <button class="">Get in Touch</button>
+        <p class="m-3">Hi there!, I am a passionate front Web Developer.Striving on minimalist and point fron-end webdesing
+          <br>Looking for a new challange at the moement</p>
+        <!-- <button class="">Get in Touch</button> -->
       </div>
     </div>
-    <div class="col col-md-6 offset-md-3 w-100 text-center">
+    <div class="col col-md-6 offset-md-3 text-center">
       <i class="fa fa-angle-down fa-5x "></i>
     </div>
   </div>
   <!-- /home div -->
 
 
-  <!-- work secion  -->
-  <!-- menu  -->
-  <div id="sections" class="row work-seciton">
-    <div class="col">
-      <div class="d-flex flex-row text-white align-items-stretch text-center menu">
-        <div class="port-item p-2 skills" data-toggle="collapse" data-target="#studies">
-          <i class="fab fa-accusoft fa-2x d-block">
-            <span class="d-none d-sm-block">Skills</span>
-          </i>
-        </div>
-        <div class="port-item p-2 studies" data-toggle="collapse" data-target="#resume">
-          <i class="fa fa-graduation-cap fa-2x d-block">
-            <span class="d-none d-sm-block">Studies</span>
-          </i>
-        </div>
-        <div class="port-item p-2 projects" data-toggle="collapse" data-target="#work">
-          <i class="fa fa-folder-open fa-2x d-block">
-            <span class="d-none d-sm-block">Porjects</span>
-          </i>
-        </div>
-        <div class="port-item p-2  contact " data-toggle="collapse" data-target="#contact">
-          <i class="fa fa-envelope fa-2x d-block">
-            <span class="d-none d-sm-block">Contact</span>
-          </i>
-        </div>
-      </div>
-
-
-
-      <!-- Collapse Modules  -->
-      <div id="studies" class="collapse show">
-        <div class="studies-heading w-100 text-center">
-          <h2 class="p-1 p-md-5">My Skills</h2>
-        </div>
-        <div class="container-fluid w-75 skills-divs">
-          <div class="skills-div d-flex align-items-center justify-content-around flex-wrap">
-
-            <div class="item" data-toggle="modal" data-target="#loginModal">
-              <img class="js" src="img/icons/javascript.png"></img>
-              <img class="html" src="img/icons/html5.png"></img>
-              <div class="d-flex second animated brdr-bttm border row-hl align-items-end">
-                <h3>Web
-                  <br>
-                  <span class="ml-3">Stack</span>
-                </h3>
-                <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-              </div>
-            </div>
-
-            <div class="item" data-toggle="modal" data-target="#loginModal">
-              <img class="js" src="img/icons/javascript.png"></img>
-              <img class="html" src="img/icons/html5.png"></img>
-              <div class="d-flex second animated brdr-bttm border row-hl align-items-end">
-                <h3>Web
-                  <br>
-                  <span class="ml-3">Stack</span>
-                </h3>
-                <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-              </div>
-            </div>
-
-            <div class="item" data-toggle="modal" data-target="#loginModal">
-              <img class="js" src="img/icons/javascript.png"></img>
-              <img class="html" src="img/icons/html5.png"></img>
-              <div class="d-flex second animated brdr-bttm border row-hl align-items-end">
-                <h3>Web
-                  <br>
-                  <span class="ml-3">Stack</span>
-                </h3>
-                <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-              </div>
-            </div>
-
-
-            <div class="item" data-toggle="modal" data-target="#loginModal">
-              <img class="js" src="img/icons/javascript.png"></img>
-              <img class="html" src="img/icons/html5.png"></img>
-              <div class="d-flex second animated brdr-bttm border row-hl align-items-end">
-                <h3>Web
-                  <br>
-                  <span class="ml-3">Stack</span>
-                </h3>
-                <i class="ml-5 fa fa-angle-double-right fa-2x"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="resume" class="collapse" style="height: 40vh;background: #BFB8DB;">
-          <h2>Resume div</h2>
-          <p></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti laboriosam minima animi autem sit magnam doloremque accusamus exercitationem dolore alias voluptatibus corrupti, est atque nulla ratione maiores ipsam assumenda, possimus maxime facilis voluptatem aut aliquam praesentium nostrum repudiandae. At quas culpa neque saepe suscipit, architecto! Nulla veniam odit quam, aut!
-      </div>
-      <div id="work" class="collapse" style="height: 40vh;background: #5F587C;">
-          <h2>Resume div</h2>
-          <p></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti laboriosam minima animi autem sit magnam doloremque accusamus exercitationem dolore alias voluptatibus corrupti, est atque nulla ratione maiores ipsam assumenda, possimus maxime facilis voluptatem aut aliquam praesentium nostrum repudiandae. At quas culpa neque saepe suscipit, architecto! Nulla veniam odit quam, aut!
-      </div>
-      <div id="contact" class="collapse" style="height: 60vh;background: #352E4F;">
-          <h2>Resume div</h2>
-          <p></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti laboriosam minima animi autem sit magnam doloremque accusamus exercitationem dolore alias voluptatibus corrupti, est atque nulla ratione maiores ipsam assumenda, possimus maxime facilis voluptatem aut aliquam praesentium nostrum repudiandae. At quas culpa neque saepe suscipit, architecto! Nulla veniam odit quam, aut!
-      </div>
-    </div>
-
-  </div>
-
-
-
-  <!-- MODAL 
-        div has to have a class of modal and id that we created for it in the button
-    -->
-  <div class="modal w-100" id="loginModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Log-In</h5>
-          <button class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid w-100"></div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary" data-dismiss="modal">Login</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- /work secion  -->
-
-
   <div id="sections">
-    <div class="container">
-      <div class="row  text-center">
-        <div class=" col-md-6  p-4 d-flex flex-column justify-content-between  learn-story-div ">
-          <h2 style="color: black; ">My Journey</h2>
-          <div class="brdr brdr-2">
-            <div class="dot"></div>
-          </div>
-          <div class="  brdr brdr-1">
-            <div class="dot"></div>
-          </div>
-          <div class="  brdr brdr-2">
-            <div class="dot"></div>
-          </div>
-          <div class="  brdr brdr-1">
-            <div class="dot"></div>
-          </div>
-          <div class="  brdr last brdr-2">
-            <div class="dot"></div>
-          </div>
+    <div class="my-sevices m-0">
+      <div class="spacer text-center">
+        <h1 class="pt-5">My Services</h1>
+      </div>
+      <div class="d-md-flex justify-content-around m-md-5 ">
+        <div class="item">
+          <i class="icons fas fa-code fa-3x mb-2"></i>
+          <h2>Web Design</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
         </div>
-
-        <div class="col-md-6 p-4 item-hl d-none d-md-block order-2 journey-img">
-
+        <div class="item">
+          <i class="icons fas fa-camera-retro fa-3x mb-2"></i>
+          <h2>Photography</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
         </div>
+        <div class="item">
+          <i class="icons fas fa-pen-nib fa-3x mb-2"></i>
+          <h2>Desing</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
+      </div>
+      <div class="d-md-flex justify-content-around m-md-5">
+        <div class="item">
+          <i class="icons fab fa-wordpress-simple fa-3x mb-2 icons"></i>
+          <h2>Wodpress Websites</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
+        <div class="item">
+          <i class="icons fas fa-code fa-3x mb-2"></i>
+          <h2>Web Design</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
+        <div class="item">
+          <i class="icons fas fa-code fa-3x mb-2"></i>
+          <h2>Web Design</h2>
+          <p>Custom coded websites
+            <br>Using all latest technologies</p>
+          <div class="link">learn more</div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="sections" class="about-me">
+    <div class="row align-items-center">
+      <div class="d-flex">
+        
       </div>
     </div>
   </div>
@@ -233,16 +176,19 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script>
-    $('.port-item').click(function() {
+    $('.port-item').click(function () {
       $('.collapse').collapse('hide');
     });
 
-    $(document).on('click', '[data-toggle="lightbox"]', function(e) {
+    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
       e.preventDefault();
       $(this).ekkoLightbox();
     })
