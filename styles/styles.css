@@ -4,8 +4,9 @@
     /* overflow-x: hidden; */
 }
 
-
- 
+body {
+    background: #020312;
+}
 
 h1 {
     font-family: 'Rubik', sans-serif;
@@ -36,8 +37,18 @@ h4 {
     font-size: 1em;
 }
 
-#home {
+#sections,
+#home,
+#sevices,
+#about,
+#skills,
+#portfolio {
     height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.home {
     background: #D3D3D3;
     background: url("../img/home-background.jpg");
     -webkit-background-size: cover;
@@ -46,11 +57,15 @@ h4 {
     background-size: cover;
 }
 
-.home-overlay {
+.cneter-content {
+    height: 100% !important;
+}
+
+.overlay {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: rgba(20, 21, 46, 0.72);
+    background: rgba(20, 21, 46, 0.82);
 }
 
 .navbar {
@@ -93,10 +108,9 @@ h4 {
     margin: auto;
 }
 
-#sections {
-    height: 100vh;
-    position: relative;
-    width: 100%;
+        /* Services Section  */
+
+.services-section {
     background: #020312;
 }
 
@@ -143,20 +157,24 @@ h1 {
     margin: auto;
 }
 
-/* About section styles */
+        /* About section styles */
 
-.about-me {
-    /* height: 60%; */
+.about-me-section {
+    background: #020312;
 }
 
 .about-content {
-    
-    /* height: 300px; */
+    position: relative;
+    height: 100%;
     background: red;
     /* background: #020312; */
-    background: center / contain no-repeat url('../img/home-background.jpg') ;
+    background: center / contain no-repeat url('../img/home-background.jpg');
 }
 
+.about-content>.overlay {
+    left: 0;
+    opacity: .5;
+}
 
 .about-txt {
     height: 100%;
@@ -165,6 +183,7 @@ h1 {
 
 .card {
     background: #020312;
+    width: 50%;
 }
 
 .card-body>h3 {
@@ -172,7 +191,11 @@ h1 {
     font-size: 1.5em;
 }
 
-/* ANIMATED BORDER CLASS */
+.line-about {
+    background: #fff;
+}
+
+        /* ANIMATED BORDER CLASS */
 
 .animated-border {
     width: 50%;
@@ -182,7 +205,7 @@ h1 {
     overflow: hidden;
 }
 
-.animated-border::before{
+.animated-border::before {
     position: absolute;
     content: '';
     left: 0;
@@ -193,7 +216,8 @@ h1 {
     border-left: 4px solid transparent;
     transform: translateX(100%);
 }
-.animated-border::after{
+
+.animated-border::after {
     position: absolute;
     content: '';
     left: 0;
@@ -205,16 +229,267 @@ h1 {
     transform: translateX(-100%);
 }
 
-.animated-border:hover::before{
-    border-color: #EBC076;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .3s;
-}
-.animated-border:hover::after{
+.animated-border:hover::before {
     border-color: #EBC076;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
 }
 
+.animated-border:hover::after {
+    border-color: #EBC076;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+        /* Work together section  */
+
+.work-together {
+    height: 200px;
+    background: top/ cover no-repeat url('https://images.unsplash.com/photo-1528879342222-323df0d65c9f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c2508ba26f0182f709620abb4d8b3a6&auto=format&fit=crop&w=1351&q=80') #99f fixed;
+    color: #EBC076;
+    color: #D3D3D3;
+    position: relative;
+}
+
+.work-together>.overlay {
+    left: 0%;
+    z-index: 0;
+    opacity: .8;
+}
+
+.work-together>h4 {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+        /* Skills Section */
+
+.skills-copy {
+    width: 75%;
+}
+
+.progress-bars-div-html {
+    position: relative;
+    top: -35%;
+}
+
+.progress-bars-div-javascript {
+    position: relative;
+    top: -15%;
+}
+
+.progress-bars-div-frameworks {
+    position: relative;
+    top: 5%;
+}
+
+.progress-bars-div-wordpress {
+    position: relative;
+    top: 25%;
+}
+
+.progress-wrapper {
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+}
+
+.progressbar {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-35deg) rotateY(-35deg);
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 254, 254, .7);
+    top: 0;
+    left: 0;
+}
+
+.bottom {
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    box-shadow: 10px 10px 50px 5px rgba(90, 90, 90, .7);
+}
+
+.top {
+    transform: translate(0, -100%) rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.back {
+    transform: translateZ(-40px);
+}
+
+.left {
+    width: 40px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    background: #EBC076;
+}
+
+.right {
+    width: 40px;
+    transform: rotateY(90deg) translateX(100%);
+    transform-origin: right;
+    background: #EBC076;
+    background: red;
+}
+
+.bar-javascript,
+.bar-html,
+.bar-frameworks,
+.bar-wordpress {
+    height: 100%;
+    background: #EBC076;
+    box-shadow: 5px 5px 50px rgba(235, 192, 118, .6);
+}
+
+.bar-javascript {
+    width: 75%
+}
+
+.bar-html {
+    width: 85%;
+}
+
+.bar-frameworks {
+    width: 95%;
+}
+
+.bar-wordpress {
+    width: 95%;
+}
+
+        /* Portfolio Section */
+
+.col-1 {
+    background: #80A1C1;
+}
+
+.col-2 {
+    background: #0E243A;
+}
+
+.col-3 {
+    background: #C0CCD8;
+}
+
+.col-4 {
+    background: #62A4E5;
+}
+
+.col-5 {
+    background: #1D6BBA;
+}
+
+/* Extra small devices (phones, 600px and down) mobile */
+
+@media only screen and (max-width: 600px) {
+    
+    
+    #skills,
+    #portfolio {
+        height: auto;
+        min-height: 1px!important;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .logo {
+        width: 90px;
+    }
+    .spacer {
+        height: auto;
+    }
+    .item {
+        margin-top: 10%;
+        height: auto;
+    }
+    
+    .image-border {
+        display: none;
+    }
+    .animated-border {
+        width: 100%;
+    }
+    .about-content {
+        height: 200px;
+        margin: 6% 0;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-body {
+        padding: .25rem;
+    }
+    .work-together>h4 {
+        position: inherit;
+    }
+
+
+        /* Skillls Div */
+
+
+    .skills-copy {
+        width: 100%;
+    }
+    .progress-wrapper {
+        width: 200px;
+        height: 40px;
+        position: absolute;
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .skills-progress-bars {
+        height: 500px!important;
+    }
+
+    .progress-bars-div-html {
+        top: -45%;
+    }
+    .progress-bars-div-javascript {
+        top: -25%;
+    }
+    .progress-bars-div-frameworks {
+        top: -5%;
+    }
+    .progress-bars-div-wordpress {
+        top: 15%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .about-txt {
+        padding-left: 10%;
+    }
+    .about-button {
+        margin-top: 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
