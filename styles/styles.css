@@ -417,11 +417,32 @@ h1 {
 
 .img {
     transition: .4s linear;
+    max-width: 100%;
+    position: relative;
 }
 
-.img:hover {
+.hidden:hover .img {
     filter: grayscale(1);
-    transform: rotate(2deg) scale(1.1);
+    transform: rotate(2deg) scale(1.4);
+    cursor: pointer;
+}
+
+.hidden::after {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: '';
+    height: 100%;
+    width: 0;
+}
+
+.hidden:hover::after {
+    background: #020312;
+    opacity: .4;
+    width: 100%;
+    left: 0;
+    transition: left .4s linear;
+    cursor: pointer;
 }
 
 .hidden:hover>.hidden-desr {
