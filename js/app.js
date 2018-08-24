@@ -20,6 +20,7 @@ class Ui {
     btnLeave(e) {
         e.target.style.background = '';
     }
+
 }
 
 // get event listeners 
@@ -55,3 +56,54 @@ for (let i = 0; i < buttons.length; i++) {
         ui.btnLeave(event);
     });
 }
+
+console.log(screen.width);
+
+
+const portfolio = document.querySelector('.portfolio');
+const lgImg = document.querySelectorAll('.hidden');
+const body = document.getElementsByTagName('body');
+let counter = 1;
+
+
+
+if(screen.width > 500) {
+
+
+for (const image of lgImg) {
+    image.addEventListener('click', (e) => {
+        e.preventDefault();
+        let lightbox = document.createElement('div');
+        let imageDiv = document.createElement('div');
+        imageDiv.innerHTML = `
+        <img class="lg-img m-auto" src="../img/img-${counter}.jpeg">
+        `;
+        lightbox.className = 'overlay-img row align-items-center';
+        imageDiv.className = 'col-md-8 h-100 m-auto w-75 d-flex';
+        lightbox.appendChild(imageDiv);
+        console.log(lightbox);
+        body[0].style.overflow = 'hidden';
+        portfolio.appendChild(lightbox);
+        if (counter > 2) {
+            counter--;
+        } else {
+            counter++;
+        }
+
+        console.log(counter);
+
+
+
+
+        lightbox.addEventListener('click', () => {
+            image.classList.remove('img-cnetered');
+            portfolio.removeChild(lightbox);
+            body[0].style.overflow = '';
+        })
+    })
+}
+
+}
+
+
+console.log(portfolio);

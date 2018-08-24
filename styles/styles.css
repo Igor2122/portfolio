@@ -395,6 +395,58 @@ h1 {
     background: #1D6BBA;
 }
 
+.portfolio {
+    position: relative;
+}
+
+.hidden {
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+
+.hidden-desr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translateY(50%,-50%); */
+    z-index: 1;
+    opacity: 0;
+    transition: .4s linear .2s;
+}
+
+.img {
+    transition: .4s linear;
+}
+
+.img:hover {
+    filter: grayscale(1);
+    transform: rotate(2deg) scale(1.1);
+}
+
+.hidden:hover>.hidden-desr {
+    opacity: 1;
+}
+
+
+
+.overlay-img {
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(20, 21, 46, 0.82);
+    transition: all 1s;
+}
+
+.img-cnetered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
 /* Extra small devices (phones, 600px and down) mobile */
 
 @media only screen and (max-width: 600px) {
