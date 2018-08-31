@@ -108,7 +108,7 @@ h4 {
     margin: auto;
 }
 
-        /* Services Section  */
+/* Services Section  */
 
 .services-section {
     background: #020312;
@@ -157,7 +157,7 @@ h1 {
     margin: auto;
 }
 
-        /* About section styles */
+/* About section styles */
 
 .about-me-section {
     background: #020312;
@@ -195,7 +195,7 @@ h1 {
     background: #fff;
 }
 
-        /* ANIMATED BORDER CLASS */
+/* ANIMATED BORDER CLASS */
 
 .animated-border {
     width: 50%;
@@ -243,7 +243,7 @@ h1 {
     transition: .3s transform linear, .3s height linear .3s;
 }
 
-        /* Work together section  */
+/* Work together section  */
 
 .work-together {
     height: 200px;
@@ -269,7 +269,7 @@ h1 {
     width: 350px;
 }
 
-        /* Skills Section */
+/* Skills Section */
 
 .skills-copy {
     width: 75%;
@@ -373,7 +373,7 @@ h1 {
     width: 95%;
 }
 
-        /* Portfolio Section */
+/* Portfolio Section */
 
 .col-1 {
     background: #80A1C1;
@@ -405,7 +405,7 @@ h1 {
     position: relative;
 }
 
-.hidden-desr{
+.hidden-desr {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -422,39 +422,37 @@ h1 {
 }
 
 .hidden:hover .img {
-    filter: grayscale(1);
-    transform: rotate(2deg) scale(1.4);
+    /* filter: grayscale(1); */
+    transform:  scale(1.1) translateY(5%) rotate(.1deg);
     cursor: pointer;
 }
 
 .hidden::after {
     position: absolute;
     top: 0;
-    left: -100%;
+    opacity: .1;
     content: '';
     height: 100%;
-    width: 0;
+    width: 100%;
+    background: #020312;
 }
 
 .hidden:hover::after {
-    background: #020312;
-    opacity: .4;
-    width: 100%;
-    left: 0;
-    transition: left .4s linear;
+    opacity: .5;
+    transition: opacity .4s linear;
     cursor: pointer;
 }
+
+
 
 .hidden:hover>.hidden-desr {
     opacity: 1;
 }
 
-
-
 .overlay-img {
     position: absolute;
     z-index: 1;
-    top:0;
+    top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
@@ -468,15 +466,42 @@ h1 {
     left: 50%;
 }
 
+.sample {
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.pr-img {
+    height: 30%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    transition: all 1s;
+}
+
+.phone {
+    top: 50%;
+    height: 150px;
+}
+
+.laptop {
+    left: 50%;
+}
+
+.hidden:hover .phone {
+    /* transform: rotate3d(0.5, 1, 1, -45deg); */
+    /* transform: translate(50%) rotateZ(0) rotateY(0) scale(1.5); */
+    transform-origin: center;
+}
+
 /* Extra small devices (phones, 600px and down) mobile */
 
 @media only screen and (max-width: 600px) {
-    
-    
     #skills,
     #portfolio {
         height: auto;
-        min-height: 1px!important;
+        min-height: 1px !important;
     }
     h1 {
         font-size: 2em;
@@ -491,7 +516,6 @@ h1 {
         margin-top: 10%;
         height: auto;
     }
-    
     .image-border {
         display: none;
     }
@@ -511,11 +535,7 @@ h1 {
     .work-together>h4 {
         position: inherit;
     }
-
-
-        /* Skillls Div */
-
-
+    /* Skillls Div */
     .skills-copy {
         width: 100%;
     }
@@ -525,11 +545,9 @@ h1 {
         position: absolute;
         /* transform: translate(-50%, -50%); */
     }
-
     .skills-progress-bars {
-        height: 500px!important;
+        height: 500px !important;
     }
-
     .progress-bars-div-html {
         top: -45%;
     }
