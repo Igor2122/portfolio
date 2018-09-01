@@ -12,14 +12,14 @@ h1 {
     font-family: 'Rubik', sans-serif;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 56px;
     margin-top: 5%;
 }
 
 h2 {
     font-family: 'Rubik', sans-serif;
-    /* font-size: 56px; */
+    color: #fff;
 }
 
 h3 {
@@ -27,9 +27,9 @@ h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-h2,
+
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
@@ -167,7 +167,6 @@ h1 {
     position: relative;
     height: 100%;
     background: red;
-    /* background: #020312; */
     background: center / contain no-repeat url('../img/home-background.jpg');
 }
 
@@ -297,7 +296,7 @@ h1 {
 
 .progress-wrapper {
     width: 500px;
-    height: 40px;
+    height: 20px;
     position: absolute;
     /* transform: translate(-50%, -50%); */
 }
@@ -330,22 +329,21 @@ h1 {
 }
 
 .back {
-    transform: translateZ(-40px);
+    transform: translateZ(-20px);
 }
 
 .left {
-    width: 40px;
+    width: 20px;
     transform: rotateY(90deg);
     transform-origin: left;
     background: #EBC076;
 }
 
 .right {
-    width: 40px;
+    width: 20px;
     transform: rotateY(90deg) translateX(100%);
     transform-origin: right;
     background: #EBC076;
-    background: red;
 }
 
 .bar-javascript,
