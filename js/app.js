@@ -7,7 +7,7 @@ const buttons = document.querySelectorAll('.about-button');
 class Ui {
     animate(target, target2) {
         target.style.left = '30px';
-        target2.style.top = '-5px';
+        target2.style.top = '-15px';
     }
     unanimate(target, target2) {
         target.style.left = '';
