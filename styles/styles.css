@@ -43,7 +43,6 @@ h4 {
 #skills,
 #portfolio {
     height: 100vh;
-    position: relative;
     width: 100%;
 }
 
@@ -54,7 +53,7 @@ h4 {
     flex-direction: column;
     text-align: center;
     /* background: #D3D3D3; */
-    /* background: url("../img/home-background.jpg"); */
+    background: url("../img/home-background.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -70,17 +69,27 @@ h4 {
 
 .navigation {
     background: #fff;
-    height: 10%;
+    height: 7%;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    /* bottom: 0; */
 }
 
-.logo {
+.navigation ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+/* .logo {
     position: absolute;
     z-index: 999999999999999999999999999999;
     width: 150px;
-}
+} */
 
 .fab,
 .fas {
