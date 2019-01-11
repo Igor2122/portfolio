@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    box-sizing: border-box;
 }
 
 body {
@@ -48,32 +48,32 @@ h4 {
 }
 
 .home {
-    background: #D3D3D3;
-    background: url("../img/home-background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* background: #D3D3D3; */
+    /* background: url("../img/home-background.jpg"); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; 
 }
 
-.cneter-content {
-    height: 100% !important;
+
+.intro-div {
+    height: 50vh;
 }
 
-.overlay {
-    position: absolute;
-    height: 100%;
+
+
+.navigation {
+    background: #fff;
+    height: 10%;
     width: 100%;
-    background: rgba(20, 21, 46, 0.82);
-}
-
-.navbar {
-    background: #020312 !important;
-    color: #fff;
-}
-
-.nav-link {
-    color: #fff !important;
+    position: absolute;
+    bottom: 0;
 }
 
 .logo {
@@ -88,8 +88,11 @@ h4 {
     /*border: 1px #fff solid;*/
 }
 
-.center-div {
-    height: 60vh;
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin: auto;
 }
 
 .image-border {
@@ -98,6 +101,7 @@ h4 {
     border: 2px solid #fff;
     border-radius: 50%;
     overflow: hidden;
+    margin: auto;
 }
 
 .line {
@@ -105,6 +109,13 @@ h4 {
     height: 1px;
     width: 80%;
     margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(20, 21, 46, 0.82);
 }
 
 /* Services Section  */
